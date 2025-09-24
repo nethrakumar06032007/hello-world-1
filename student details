@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+class Student {
+    // Attributes
+    int rollNo;
+    String name;
+    int age;
+    String course;
+
+    // Method to get student details
+    void inputDetails() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Roll Number: ");
+        rollNo = sc.nextInt();
+        sc.nextLine(); // consume newline
+
+        System.out.print("Enter Name: ");
+        name = sc.nextLine();
+
+        System.out.print("Enter Age: ");
+        age = sc.nextInt();
+        sc.nextLine(); // consume newline
+
+        System.out.print("Enter Course: ");
+        course = sc.nextLine();
+    }
+
+    // Method to display student details
+    void displayDetails() {
+        System.out.println("\n--- Student Details ---");
+        System.out.println("Roll Number: " + rollNo);
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Course: " + course);
+    }
+}
+
+public class StudentDetails {
+    public static void main(String[] args) {
+        Student s1 = new Student();
+
+        // Input and display
+        s1.inputDetails();
+        s1.displayDetails();
+    }
+}
