@@ -1,0 +1,15 @@
+class Book {
+    String title, author;
+    Book(String t, String a) { title=t; author=a; }
+}
+public class Library {
+    public static void main(String[] args) {
+        Book[] books = { new Book("Java Basics","James"), new Book("Python","Guido") };
+        String search = "Java Basics";
+        for (Book b: books) {
+            if (b.title.equalsIgnoreCase(search)) {
+                System.out.println("Found: " + b.title + " by " + b.author);
+            }
+        }
+    }
+}
