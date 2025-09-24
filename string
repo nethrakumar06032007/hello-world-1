@@ -1,0 +1,38 @@
+public class StringExample {
+    public static void main(String[] args) {
+        // Creating strings
+        String str1 = "Hello";
+        String str2 = "World";
+        
+        // Concatenation
+        String result = str1 + " " + str2;
+        System.out.println("Concatenation: " + result);
+        
+        // Length of string
+        System.out.println("Length of str1: " + str1.length());
+        
+        // Character at a position
+        System.out.println("Character at index 1 of str1: " + str1.charAt(1));
+        
+        // Substring
+        System.out.println("Substring of str2 (1 to 4): " + str2.substring(1, 4));
+        
+        // String comparison
+        System.out.println("str1 equals str2? " + str1.equals(str2));
+        
+        // Converting to upper and lower case
+        System.out.println("Uppercase: " + str1.toUpperCase());
+        System.out.println("Lowercase: " + str2.toLowerCase());
+        
+        // Checking if a string contains another string
+        System.out.println("Does str1 contain 'lo'? " + str1.contains("lo"));
+        
+        // Replace characters
+        System.out.println("Replace 'l' with 'x' in str1: " + str1.replace('l', 'x'));
+        
+        // Trim whitespace
+        String str3 = "   Java Programming   ";
+        System.out.println("Before trim: '" + str3 + "'");
+        System.out.println("After trim: '" + str3.trim() + "'");
+    }
+}
